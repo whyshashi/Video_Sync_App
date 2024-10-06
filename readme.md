@@ -114,6 +114,13 @@ Start the server
 
 ![alt text](./readme-assist/join_room.png)
 
+# Admin room View
+
+![alt text](./readme-assist/admin_page.png)
+
+# User room View
+
+![alt text](./readme-assist/user_page.png)
 
 # FAQ
 
