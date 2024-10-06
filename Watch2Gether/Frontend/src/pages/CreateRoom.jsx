@@ -22,7 +22,7 @@ const CreateRoom = () => {
     try {
       const config = { headers: { Authorization: `Bearer ${token}` } };
       const response = await axios.post(
-        "http://localhost:8000/api/room/create",
+        "https://video-sync-app.onrender.com/api/room/create",
         { name },
         config
       );

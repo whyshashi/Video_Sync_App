@@ -14,7 +14,7 @@ const VideoPlayer = ({ videoLink, roomId }) => {
     const [isAdmin, setIsAdmin] = useState(false); 
 
     useEffect(() => {
-        socket = io('http://localhost:8000/');
+        socket = io('https://video-sync-app.onrender.com');
 
         socket.emit('joinRoom', { roomId, userId: 'some-unique-user-id' });  
 

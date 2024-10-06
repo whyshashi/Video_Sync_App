@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (email, password) => {
         try {
-            const res = await axios.post('http://localhost:8000/api/auth/login', { email, password });
+            const res = await axios.post('https://video-sync-app.onrender.com/api/auth/login', { email, password });
             const loggedInUser = { id: res.data.payload.user.id, role: res.data.payload.user.role, username:res.data.payload.user.username  };
             setUser(loggedInUser);
             setToken(res.data.token);
@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     const register = async (username, email, password, role) => {
-        const response = await fetch('http://localhost:8000/api/auth/register', {
+        const response = await fetch('https://video-sync-app.onrender.com/api/auth/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

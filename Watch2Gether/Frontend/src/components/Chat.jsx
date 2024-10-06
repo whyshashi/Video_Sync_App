@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import io from "socket.io-client";
 import styles from "../styles/Chat.module.css";
 
-const socket = io("http://localhost:8000/", {
+const socket = io("https://video-sync-app.onrender.com", {
   transports: ["websocket"],
 });
 

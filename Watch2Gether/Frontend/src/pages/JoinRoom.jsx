@@ -19,7 +19,7 @@ const JoinRoom = () => {
     try {
       const config = { headers: { Authorization: `Bearer ${token}` } };
       await axios.post(
-        "http://localhost:8000/api/room/join",
+        "https://video-sync-app.onrender.com/api/room/join",
         { roomId },
         config
       );

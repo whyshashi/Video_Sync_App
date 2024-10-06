@@ -27,7 +27,7 @@ const Room = () => {
       const config = { headers: { Authorization: `Bearer ${token}` } };
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/room/${roomId}`,
+          `https://video-sync-app.onrender.com/api/room/${roomId}`,
           config
         );
         setRoom(res.data);
@@ -38,7 +38,7 @@ const Room = () => {
 
     fetchRoom();
 
-    socket = io("http://localhost:8000/");
+    socket = io("https://video-sync-app.onrender.com/");
     socket.emit("joinRoom", { roomId, userId: user.id });
 
     socket.on("new-video", (videoLink) => {
@@ -72,7 +72,7 @@ const Room = () => {
     console.log("Sending video link:", data);
 
     try {
-      await axios.post("http://localhost:8000/api/video/link", data, config);
+      await axios.post("https://video-sync-app.onrender.com/api/video/link", data, config);
       console.log("Video link submitted successfully");
       setLink("");
     } catch (error) {
