@@ -32,7 +32,7 @@ exports.register = async (req, res) => {
             }
             res.status(200).json({ token });
         });
-
+        
     } catch (err) {
         console.error('Error during registration:', err); 
         res.status(500).json({ msg: 'Server error' });

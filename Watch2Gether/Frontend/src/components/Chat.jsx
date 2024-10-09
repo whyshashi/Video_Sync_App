@@ -55,7 +55,7 @@ const Chat = ({ roomId, user }) => {
           className={styles.textField}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Type your message..."
+          placeholder="Type your message here..."
         />
         <button onClick={sendMessage} className={styles.button}>
           Send
