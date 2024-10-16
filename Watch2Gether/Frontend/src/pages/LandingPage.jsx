@@ -88,7 +88,7 @@ export const Landingpage = () => {
               </div>
             </div>
             <div>
-              <img src={p1} alt="" />
+              <img className="this" src={p1} alt="" />
             </div>
             <div>
               <img src={p2} alt="" />
@@ -97,18 +97,20 @@ export const Landingpage = () => {
               <img src={p5} alt="" />
             </div>
             <div>
-              <img src={p6} alt="" />
+              <img className="this" src={p6} alt="" />
             </div>
           </section>
-        </div>
-        <footer >
-                <div className="container">
+
+          <footer >
+                <div >
                     <a href="">Product documentation</a>
-                    <a href="">Contact - Site notice / Impressum</a>
+                    <a href="">Contact - Site notice</a>
                     <a href="">Data Privacy Policy</a>
                     <a href="">About Us</a>
                 </div>
         </footer>
+        </div>
+        
       </div>
     </>
   );

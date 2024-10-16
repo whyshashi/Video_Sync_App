@@ -3,15 +3,15 @@
      background-position: center;
      background-size: cover;
      background-attachment: fixed;
-     /* width: 100%;
-     height: 100%; */
+     width: 100vw;
+     /* height: 100%;  */
      font-family: sans-serif;
      color: rgb(222, 227, 230);
 }
 
 .container {
     margin: auto;
-    width: 1480px;
+    width: 80vw;
     padding: 50px 40px;
 }
 
@@ -65,7 +65,11 @@
 }
 
 #section1{
+    /* width: 100vw; */
     padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #section1>div{
@@ -73,7 +77,6 @@
     border-radius: 10px;
     max-width: 550px;
     padding: 20px;
-    margin:auto ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,11 +114,12 @@
 #section2>div:nth-of-type(3){
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
 }
+
 #section2>div:nth-of-type(3) img{
     max-width:290px;
 }
@@ -157,6 +161,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 60px;
 
 }
@@ -164,6 +169,7 @@
     max-width: 300px;
     display: flex;
 }
+
 
 
 footer>div {
@@ -174,8 +180,62 @@ footer>div {
 footer a{
     text-decoration: none; 
     color: rgb(222, 227, 230);
+    margin: 20px;
+
 }
 
 footer{
     background-color: rgba(57, 69, 84, 0.66);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+
+@media only screen and (min-width: 1200px) {
+    
+  }
+  
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #bar{
+        display: none;
+    }
+    
+  }
+  
+  
+  
+ 
+  @media only screen and (min-width: 300px) and (max-width: 992px) {
+    #bar{
+        display: none;
+    }
+    #section1{
+        padding: 50px;
+    }
+    #section1>div{
+        padding: 50px;
+    }
+
+    footer>div {
+        display: flex;
+        flex-direction: column;
+        line-height: 80%;
+    }
+
+    .this{
+        display: none;
+    }
+
+    #section2{
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+  }
