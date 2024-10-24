@@ -72,8 +72,7 @@ const Login = () => {
         </button>
       </form>
       <p className={styles.link} onClick={goToSignup}>
-        Dont have an account? 
-        {/* <Link to="/register">Register here</Link> */}
+        Dont have an account?
       </p>
     </div>
     </div>

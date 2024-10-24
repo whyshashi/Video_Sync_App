@@ -68,14 +68,8 @@ const CreateRoom = () => {
           <>
             <p style={{ marginTop: "1rem" }}>
               Room created! Share this Room ID to join
-              {/* Share this link to join:{" "} */}
-              {/* <a href={joinUrl} className={styles.link}>
-                {joinUrl}
-              </a> */}
             </p>
             <p className={styles.link}>{roomId}</p>
-            {/* <p>Or Join using Room ID</p> */}
-            {/* <p>{roomId}</p>  */}
             {user.role === "admin" && (
               <button
                 className={styles.button}
