@@ -18,6 +18,9 @@ export const Landingpage = () => {
     navigate('/login'); 
   };
 
+  const gotToSignup = () =>{
+    navigate('/Signup');
+  }
   return (
     <>
       <div id="dodo">
@@ -42,7 +45,7 @@ export const Landingpage = () => {
               <div style={{ borderRight: "2px solid rgb(222, 227, 230)" }}>
                 <p>Upgrade</p>
               </div>
-              <div style={{ borderRight: "2px solid rgb(222, 227, 230)" }}>
+              <div style={{ borderRight: "2px solid rgb(222, 227, 230)" }} onClick={gotToSignup}>
                 <p>SignUp</p>
               </div>
               <div onClick={goToLogin}>
